@@ -1,0 +1,79 @@
+ncverilog: 10.20-s114: (c) Copyright 1995-2012 Cadence Design Systems, Inc.
+TOOL:	ncverilog	10.20-s114: Started on Apr 18, 2017 at 18:21:45 CST
+ncverilog
+	testfixture.v
+	SingleCycle_MIPS.v
+	HSs18n_128x32.v
+	+access+r
+Recompiling... reason: file './SingleCycle_MIPS.v' is newer than expected.
+	expected: Tue Apr 18 18:19:05 2017
+	actual:   Tue Apr 18 18:21:03 2017
+file: SingleCycle_MIPS.v
+	module worklib.register:v
+		errors: 0, warnings: 0
+	module worklib.alu:v
+		errors: 0, warnings: 0
+	module worklib.aluCtrl:v
+		errors: 0, warnings: 0
+	module worklib.control:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+		$readmemb ("initial_data.txt", Data_memory.mem);
+		                                             |
+ncelab: *W,MEMODR (./testfixture.v,62|47): $readmem default memory order incompatible with IEEE1364.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.alu:v <0x74f873c4>
+			streams:   3, words:  1583
+		worklib.aluCtrl:v <0x246e9d1c>
+			streams:   2, words:   488
+		worklib.control:v <0x13fe5a1e>
+			streams:  14, words:  5753
+		worklib.register:v <0x6465bc8d>
+			streams:  37, words: 10450
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  8       8
+		Primitives:              75       2
+		Timing outputs:          32       1
+		Registers:               98      98
+		Scalar wires:            56       -
+		Expanded wires:          71       3
+		Vectored wires:          32       -
+		Always blocks:           10      10
+		Initial blocks:           2       2
+		Cont. assignments:       22      53
+		Pseudo assignments:       3       3
+		Timing checks:           85      44
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.SingleCycle_tb:v
+Loading snapshot worklib.SingleCycle_tb:v .................... Done
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+Your lw instruction is correct! 
+Your lw instruction is correct! 
+Your add instruction is correct! 
+Your sub instruction is correct! 
+Your and instruction is correct! 
+Your beq instruction is correct! 
+Your or instruction is correct! 
+Your slt instruction is correct! 
+Your sw instruction is correct! 
+Your jump instruction is correct! 
+Your jal instruction is correct! 
+Your jr instruction is correct! 
+Your beq instruction is correct! 
+
+-----------------------------------------------------------
+
+  Congratulations!! Your design has passed all the test!!
+
+-----------------------------------------------------------
+
+Simulation complete via $finish(1) at time 185 NS + 0
+./testfixture.v:227 		$finish;
+ncsim> exit
+TOOL:	ncverilog	10.20-s114: Exiting on Apr 18, 2017 at 18:21:46 CST  (total: 00:00:01)

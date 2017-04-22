@@ -1,0 +1,8 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+testfixture.v
+SingleCycle_MIPS.v
+HSs18n_128x32.v
++access+r

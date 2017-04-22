@@ -1,0 +1,36 @@
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Warning: Main library 'dw_foundation.sldb' has no time units specified, but library 'typical' does. (TIM-107)
+Warning: Main library 'dw_foundation.sldb' has no capacitance units specified, but library 'typical' does. (TIM-108)
+Warning: The trip points for the library named typical differ from those in the library named dw_foundation.sldb. (TIM-164)
+ 
+****************************************
+Report : area
+Design : SingleCycle_MIPS
+Version: G-2012.06
+Date   : Tue Apr 18 19:52:30 2017
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'SingleCycle_MIPS' contains 3 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    gtech (File: /usr/cad/synopsys/synthesis/cur/libraries/syn/gtech.db)
+
+Number of ports:                          172
+Number of nets:                           472
+Number of cells:                           74
+Number of combinational cells:             34
+Number of sequential cells:                33
+Number of macros:                           0
+Number of buf/inv:                         22
+Number of references:                      16
+
+Combinational area:          0.000000
+Noncombinational area:       0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:             0.000000
+Total area:                 undefined
+
+Information: This design contains unmapped logic. (RPT-7)
+1
